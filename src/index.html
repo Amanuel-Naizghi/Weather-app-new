@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <div class="img-container"></div>
+            <h2>Weather App</h2>
+        </div>
+        <div class="body">
+            <div class="user-selection">
+                <div class="set-location">
+                    <form id="my-form" action="" onsubmit="return false">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" placeholder="Choose Location" required>
+                        <button>search</button>
+                    </form>
+                </div>
+                <div class="set-temp">
+                    <label for="temp-scale">Temperature scale:</label>
+                    <button id="temp-scale">°C/°F</button>
+                </div>
+            </div>
+            <div class="today-info">
+                <div class="top-left">
+                    <div class="temp-container">
+                        <p class="temp"></p>
+                    </div>
+                    <div class="location-container">
+                        <p class="location"></p>
+                        <p class="date"></p>
+                    </div>
+                </div>
+                <div class="top-right">
+                    <div class="time-img">
+                        <div class="img-container"></div>
+                        <p class="time"></p>    
+                    </div>
+                    <p class="condition"></p>
+                </div>
+                <div class="bottom">
+                    <div class="first" data-index="1">
+                        <p class="temp"></p>
+                        <div class="img-container"></div>
+                        <p class="time"></p>
+                        <p class="time-indicator"></p>
+                    </div>
+                    <div class="second" data-index="2">
+                        <p class="temp"></p>
+                        <div class="img-container"></div>
+                        <p class="time"></p>
+                        <p class="time-indicator"></p>
+                    </div>
+                    <div class="third" data-index="3">
+                        <p class="temp"></p>
+                        <div class="img-container"></div>
+                        <p class="time"></p>
+                        <p class="time-indicator"></p>
+                    </div>
+                    <div class="fourth" data-index="4">
+                        <p class="temp"></p>
+                        <div class="img-container"></div>
+                        <p class="time"></p>
+                        <p class="time-indicator"></p>
+                    </div>
+                    <div class="fifth" data-index="5">
+                        <p class="temp"></p>
+                        <div class="img-container"></div>
+                        <p class="time"></p>
+                        <p class="time-indicator"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="weekly-info">
+                <div class="first" data-index="1">
+                    <p class="date"></p>
+                    <div class="rain-percent-container">
+                        <p class="rain-percent"></p>
+                        <div class="water-drop"></div>
+                    </div>
+                    <div class="img-container"></div>
+                    <div class="temp">
+                        <span class="min"></span>
+                        <span class="max"></span>
+                    </div>
+                </div>
+                <div class="second" data-index="2">
+                    <p class="date"></p>
+                    <div class="rain-percent-container">
+                        <p class="rain-percent"></p>
+                        <div class="water-drop"></div>
+                    </div>
+                    <div class="img-container"></div>
+                    <div class="temp">
+                        <span class="min"></span>
+                        <span class="max"></span>
+                    </div>
+                </div>
+                <div class="third" data-index="3">
+                    <p class="date"></p>
+                    <div class="rain-percent-container">
+                        <p class="rain-percent"></p>
+                        <div class="water-drop"></div>
+                    </div>
+                    <div class="img-container"></div>
+                    <div class="temp">
+                        <span class="min"></span>
+                        <span class="max"></span>
+                    </div>
+                </div>
+                <div class="fourth" data-index="4">
+                    <p class="date"></p>
+                    <div class="rain-percent-container">
+                        <p class="rain-percent"></p>
+                        <div class="water-drop"></div>
+                    </div>
+                    <div class="img-container"></div>
+                    <div class="temp">
+                        <span class="min"></span>
+                        <span class="max"></span>
+                    </div>
+                </div>
+                <div class="fifth" data-index="5">
+                    <p class="date"></p>
+                    <div class="rain-percent-container">
+                        <p class="rain-percent"></p>
+                        <div class="water-drop"></div>
+                    </div>
+                    <div class="img-container"></div>
+                    <div class="temp">
+                        <span class="min"></span>
+                        <span class="max"></span>
+                    </div>
+                </div>
+                <div class="sixth" data-index="6">
+                    <p class="date"></p>
+                    <div class="rain-percent-container">
+                        <p class="rain-percent"></p>
+                        <div class="water-drop"></div>
+                    </div>
+                    <div class="img-container"></div>
+                    <div class="temp">
+                        <span class="min"></span>
+                        <span class="max"></span>
+                    </div>
+                </div>
+            </div>
+            <dialog id="error-dialog">
+                <p></p>
+            </dialog>
+            <dialog id="loading-dialog">
+                Loading.........
+            </dialog>
+        </div>
+    </div>
+    <footer> Prepared by: Amanuel Naizghi@2024 copyright reserved <span>Powered by: Visual Crossing</span></footer>
+</body>
+</html>
